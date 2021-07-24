@@ -1,0 +1,220 @@
+@font-face {
+    src: url(fonts/Proxima-Nova-Alt-Regular.otf);
+    font-family: proxima;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.header {
+    border: 5px red;
+    width: 100%;
+    height: 69px;
+    display: block;
+    background-color: rgb(228, 253, 255);
+}
+.header ul{
+    color: black;
+    display:inline-flex;
+    float: right;
+    font-family: proxima;
+}
+.header ul li{
+    padding: 25px 25px;
+    font-size: 15px;
+}
+.header ul li a{
+    color: rgb(25, 26, 32);
+}
+.header ul li:hover{
+    border-radius: 20px;
+    transform: translate(0,-2px);
+    background-color: rgb(131, 247, 255);
+    cursor: pointer;
+}
+.welc {
+    color: rgb(0, 96, 109);
+    font-size: 50px;
+    position: relative;
+    display: flex;
+    font-family: proxima;
+    top: 25px;
+    justify-content: center;
+}
+.but{
+    font-family: proxima;
+    background-color:rgb(0, 65, 90);
+    padding: 15px 25px;
+    margin: 20px;
+    font-size: 25px;
+    color: rgb(212, 230, 255);
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 5px 5px gray;
+    position: relative;
+    left: 45%;
+}
+.but a{
+    text-decoration: none;
+}
+.but:hover{
+    transform: translate(0,-4px);
+    cursor: pointer;
+}
+.typing{
+    font-family:proxima;
+    display: flex;
+    color: rgb(139, 29, 29);
+    font-size: 35px;
+    align-items: center;
+    padding-top: 80px;
+    justify-content: center;
+}
+.typing::after {
+    content: "|";
+    font-size: 40px;
+    animation: none;
+}
+.showAnim.typing::after {
+    animation: blink 1s step-end infinite;
+} 
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+.bottom{
+    display:flex;
+    font-size: 13px;
+    font-family: proxima;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+.last{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    background-color: rgba(66, 66, 66, 0.452);;
+}
+.fa {
+    background-color: rgb(196, 196, 196);
+    padding: 10px;
+    width: 30px;
+    height: 29px;
+    margin: 10px 10px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 5px grey;
+}
+.fa:hover {
+    transform: translate(0,-4px)
+}
+.last ul{
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last ul li{
+    display: inline-flex;
+}
+.last ul li .fa{
+    font-size: 30px;
+}
+.fa-github{
+    color: rgb(89, 0, 116);
+}
+.fa-linkedin{
+    color: rgb(0, 119, 255);
+}
+.fa-envelope{
+    color: rgb(134, 0, 0);
+}
+.fa-facebook-square{
+    color: rgb(1, 77, 192);
+}
+.fa-twitter{
+    color:rgb(1, 77, 192)
+}
+.social{
+    font-family: proxima;
+    color: rgb(0, 25, 27);
+    font-size: 17px;
+}
+.container {
+    display: flex;
+    margin: 10px;
+    box-shadow: 0px 1px 5px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(223, 223, 223);
+}
+.container:hover{
+    transform: translate(0,-2px);
+}
+
+.skills {
+    font-family: proxima;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.skiltab{
+    display: block;
+    border-top: blueviolet;
+    margin-top: 50px;
+}
+.centre{
+    display: block;
+    padding-left: 42%;
+}
+.skiltxt{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: proxima;
+    font-size: 30px;
+    color: rgb(0, 0, 39);
+}
+.html {width: 90%; background-color: #b1dbe2;border-radius: 20px;}
+.css {width: 80%; background-color: #c49898;border-radius: 20px;}
+.js {width: 65%; background-color: #77b39a;border-radius: 20px;}
+.php {width: 60%;border-radius: 20px; background-color: #4ba1c4;}
+.java {width: 80%;border-radius: 20px; background-color: #af3131;}
+.python {width: 90%;border-radius: 20px; background-color: #efff60;}
+.c {width: 60%;border-radius: 20px; background-color: #d141ad;}
+.graphic{width: 80%;border-radius: 20px; background-color: #1f0246;}
+table{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+th{
+    border:5px ;
+    font-size: 20px;
+}
+td{
+    font-size: 17px;
+}
+table, th, td{
+    border-radius: 100px;
+    font-family: proxima;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse:collapse;
+}   
+img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    width:auto;
+    object-fit: cover;
+}
