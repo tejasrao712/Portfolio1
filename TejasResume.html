@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>MyPortfolio</title>
+    </head>
+<body>
+    <nav class="header">
+        <ul>
+            <li class="active"><a href="#">HOME</a></li>
+            <li class="active" id="skills">SKILLS</li>
+            <li class="active"><a href="Untitled-1.html" target="_blank">COURSES AND CERTIFICATES</a></li>
+            <li class="active" id="contact">CONTACT ME</li>
+            <li class="active"><a href="resume\Resume-Tejas-Rao.pdf" target="_blank">MY RESUME</a></li>
+        </ul>
+    </nav>
+    <div class="welc">HI! I AM TEJAS RAO</div>
+    <p class ="typing" ></p>
+    <script>
+        var typeText = document.querySelector(".typing")
+        var tobTyped = ["I AM A SOFTWARE ENGINEER BY PROFESSION.","I DESIGN WEB APPLICATIONS.","I HAVE MY INTERESTS IN DATA SCIENCE, MACHINE LEARNING AND CLOUD COMPUTING.","I AM A FREELANCE GRAPHIC DESIGNER."]
+        var index = 0, isAdding = true, pos=0
+        function playAnim() {
+        setTimeout(function () {
+            typeText.innerText = tobTyped[pos].slice(0, index)
+            if (isAdding) {
+            if (index > tobTyped[pos].length) {
+                isAdding = false
+                typeText.classList.add("showAnim")
+                setTimeout(function () {
+                typeText.classList.remove("showAnim")
+                playAnim()
+                }, 2000)
+                return
+            } 
+            else {
+                index++
+            }
+            }
+            else {
+            if (index === 0) {
+                isAdding = true
+                pos= (pos+1)%tobTyped.length
+                }
+            else {
+                index--
+                }
+            }
+            playAnim()},isAdding?70:50)
+        }
+        playAnim()
+    </script>
+    <script>
+        const cntct=document.getElementById("contact");
+        cntct.addEventListener('click',() => window.scrollTo({top:1000}));
+        const skill=document.getElementById("skills");
+        skill.addEventListener('click',() => window.scrollTo({top:400}));
+    </script>
+    <div>
+        <table>
+            <p style="font-family: proxima;font-size: 30px; font-weight: 700;color: rgb(0, 83, 109); padding:15px; padding-top: 100px; display: flex;align-items: center;justify-content: center;">SCHOOLING AND EDUCATION:</p>
+            <tr><th>LEVEL</th><th>BOARD/UNIVERSITY</th><th>AGGREGATE</th></tr>
+            <tr><td>SCHOOL</td><td>I.C.S.E. BOARD</td><td>90.67%</td></tr>
+            <tr><td>PRE-UNIVERSITY</td><td>SCIENCE AND ELECTRONICS STATE BOARD</td><td>70%</td></tr>
+            <tr><td>UNDER GRADUATION</td><td>COMPUTER SCIENCE AND ENGINEERING</td><td>8.3 CGPA(as of semester V)</td></tr>
+        </table>
+    </div>
+    <p class="skiltxt">SKILL TABLE :</p> 
+    <div class="skiltab centre"> 
+        <p style="font-family: proxima;">HTML</p>
+        <div class="container">
+            <div class="skills html">90%</div>
+        </div>
+
+        <p style="font-family: proxima;">CSS</p>
+        <div class="container">
+            <div class="skills css">80%</div>
+        </div>
+
+        <p style="font-family: proxima;">JavaScript</p>
+        <div class="container">
+            <div class="skills js">75%</div>
+        </div>
+
+        <p style="font-family: proxima;">PHP</p>
+        <div class="container">
+            <div class="skills php">60%</div>
+        </div>
+
+        <p style="font-family: proxima;">Java</p>
+        <div class="container">
+            <div class="skills java">75%</div>
+        </div>
+
+        <p style="font-family: proxima;">Python</p>
+        <div class="container">
+            <div class="skills python">90%</div>
+        </div>
+
+        <p style="font-family: proxima;">C</p>
+        <div class="container">
+            <div class="skills c">60%</div>
+        </div>
+
+        <p style="font-family: proxima;">Graphic Designing (UI/UX Designing)</p>
+        <div class="container">
+            <div class="skills graphic">80%</div>
+        </div>
+    </div>
+    <a href="mailto:tejasrao712@gmail.com"><button class = "but">HIRE ME</button></a>
+    <div class="last">
+        <ul>
+            <li class="social">Reach out to me @:</li>
+            <li><a href="https://github.com/tejasrao712" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="mailto:tejasrao712@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/tejas-rao-2287bb174/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/tejas.rao.925/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="https://twitter.com/TejasRa01235112" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+        <p class="bottom">2021 ALL RIGHTS RESERVED*</p>
+    </div>
+</body>
+</html>
